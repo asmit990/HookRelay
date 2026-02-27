@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+
+}
+
+enum DeliveryStatus {
+  PENDING
+  SUCCESS
+  FAILED
+  DEAD
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  apiKey       String   @unique
+  secretKey    String
+  createdAt    DateTime @default(now())
+
+  webhooks     Webhook[]
+  events       Event[]
+}
+
+model Webhook {
+  id         String   @id @default(uuid())
+  targetUrl  String
+  eventTypes String[]
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  deliveryLogs DeliveryLog[]
+
+  @@index([userId])
+  @@index([eventTypes], type: Gin)
+}
+
+model Event {
+  id        String   @id @default(uuid())
+  eventType String
+  payload   Json
+  createdAt DateTime @default(now())
+
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+
+  deliveryLogs DeliveryLog[]
+
+  @@index([userId, createdAt(sort: Desc)])
+
+}
+
+model DeliveryLog {
+  id            String         @id @default(uuid())
+  status        DeliveryStatus
+  attemptNumber Int            @default(1)
+  responseCode  Int?
+  errorMessage  String?
+  deliveredAt   DateTime?
+
+  webhookId     String
+  webhook       Webhook        @relation(fields: [webhookId], references: [id], onDelete: Cascade)
+
+  eventId       String
+  event         Event          @relation(fields: [eventId], references: [id])
+
+  @@index([webhookId])
+  @@index([status])
+}

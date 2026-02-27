@@ -1,0 +1,29 @@
+{
+  "name": "hookrelay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+ "scripts": {
+    "dev": "tsx watch apps/api/srcserver.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^7.4.2",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.0",
+    "pg": "^8.19.0",
+    "prisma": "^7.4.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.2",
+    "tsx": "^4.21.0"
+  }
+}
