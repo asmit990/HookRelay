@@ -1,8 +1,8 @@
-import { Worker } from 'bullmq';                  // fix 1: named import
+import { Worker } from 'bullmq';                  
 import axios from 'axios';
 import crypto from 'crypto';
-import redis from '../config/redis/redis';
-import { prisma } from '../config/db/client';     // fix: use relative path, not 'src/'
+import {redis} from '../config/redis/redis';
+import { prisma } from '../config/db/client';     
 
 const worker = new Worker(
   'webhook:delivery',
@@ -10,7 +10,7 @@ const worker = new Worker(
   async (job: any) => {
     const { webhookId, eventId, targetUrl, payload, secretKey, eventType } = job.data;
 
-    const attemptNumber = job.attemptsMade + 1;   // fix 2: attemptsMade not attemptMade
+    const attemptNumber = job.attemptsMade + 1;   
 
     const payloadString = JSON.stringify(payload);
 
@@ -30,7 +30,6 @@ const worker = new Worker(
         }
       });
 
-      // fix 3: log SUCCESS to delivery_logs, not create a webhook
       await prisma.deliveryLog.create({
         data: {
           webhookId,
@@ -44,11 +43,10 @@ const worker = new Worker(
 
       console.log(`✅ Delivered to ${targetUrl} — Status: ${response.status}`);
 
-    } catch (error: any) {                         // fix 4: catch block added
+    } catch (error: any) {                         
       const responseCode = error.response?.status ?? null;
       const isLastAttempt = attemptNumber >= 5;
 
-      // log FAILURE to delivery_logs
       await prisma.deliveryLog.create({
         data: {
           webhookId,
@@ -63,11 +61,11 @@ const worker = new Worker(
 
       console.log(` Attempt ${attemptNumber} failed for ${targetUrl}: ${error.message}`);
 
-      throw error; // CRITICAL: throw so BullMQ knows to retry
+      throw error; 
     }
   },
 
-  { connection: redis }                            // fix 5: pass redis connection
+  { connection: redis }                            
 );
 
 worker.on('completed', (job) => console.log(` Job ${job.id} done`));

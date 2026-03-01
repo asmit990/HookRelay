@@ -5,7 +5,6 @@ export const deliveryQueue = new Queue('webhook:delivery', {
     connection: redis
 })
 
-
  export async function addDeliveryJob(data: any) {
     await deliveryQueue.add('deliver', data, {
           attempts: 5,

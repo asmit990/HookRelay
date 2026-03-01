@@ -1,10 +1,25 @@
-import { Router } from "express";
+import { Router } from 'express';
+import {
+  createWebhook,
+  listWebhooks,
+  updateWebhook,
+  deleteWebhook,
+  toggleWebhook
+} from '../controllers/webhook.controller';
+import { authMiddleware } from '../middleware/auth.middlerware';
 
-const route = Router()
+const router = Router();
 
+router.use(authMiddleware);
 
-route.get("/", listwebHooks)
-route.post("/", createwebHooks)
-route.patch("/:id", webhooksServices)
-route.delete("/:id", webhookServices )
-route.patch("/:id/toggle")
+router.post('/',  createWebhook);
+
+router.get('/', listWebhooks);
+
+router.patch('/:id',  updateWebhook);
+
+router.delete('/:id', deleteWebhook);
+
+router.patch('/:id/toggle', toggleWebhook);
+
+export default router;

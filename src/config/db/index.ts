@@ -1,8 +1,7 @@
 import { prisma } from "./client"
 import crypto, { randomUUID } from "crypto"
 import bcrypt from "bcrypt"
-import { DeliveryStatus, Prisma } from "../../generated/prisma"
-
+import { DeliveryStatus, Prisma } from "@prisma/client"
 
 export async function createUser(
   data: Prisma.UserCreateInput
@@ -12,31 +11,30 @@ export async function createUser(
   });
 }
 
-
 export async function getUser(email: string, password: string) {
-   const user = await prisma.user.findUnique({
+  const user = await prisma.user.findUnique({
     where: { email }
-   })
+  })
 
-   if (!user ) {
+  if (!user) {
     throw new Error("Invalid email or password")
-   }
+  }
 
-   const isValid = await bcrypt.compare(password, user.passwordHash)
+  const isValid = await bcrypt.compare(password, user.passwordHash)
 
-   if(!isValid) throw new Error("invalid eail or password")
+  if (!isValid) throw new Error("invalid eail or password")
 
-    return user
+  return user
 }
 
 export async function findUserByEmail(email: string) {
-     return prisma.user.findUnique({
-      where: { email }
-    })
- 
+  return prisma.user.findUnique({
+    where: { email }
+  })
+
 }
 
-  export async function createWebhook(
+export async function createWebhook(
   userId: string,
   targetUrl: string,
   eventTypes: string[]
@@ -67,8 +65,6 @@ export async function createEvent(
 
   return event
 }
-
-
 
 export async function createDeliveryLog(
   webhookId: string,

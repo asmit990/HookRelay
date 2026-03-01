@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const webhook_controller_1 = require("../controllers/webhook.controller");
+const route = (0, express_1.Router)();
+route.get("/", webhook_controller_1.listWebhooks);
+route.post("/", webhook_controller_1.createWebhook);
+route.patch("/:id", webhook_controller_1.updateWebhook);
+route.delete("/:id", webhook_controller_1.deleteWebhook);
+route.patch("/:id/toggle", webhook_controller_1.toggleWebhook);
+exports.default = route;

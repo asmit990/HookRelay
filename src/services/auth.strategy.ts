@@ -1,9 +1,7 @@
 import passport from "passport";
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
-import { PrismaClient } from "../../generated/prisma";
+import { prisma } from "../config/db/client";
 import crypto from "crypto";
-
-const prisma = new PrismaClient();
 
 passport.use(
   new GoogleStrategy(
@@ -30,9 +28,7 @@ passport.use(
               email,
               apiKey: crypto.randomBytes(32).toString("hex"),
               secretKey: crypto.randomBytes(32).toString("hex"),
-              passwordHash: "", // required field in your schema
-              provider: "google",
-              providerId: profile.id
+              passwordHash: "", 
             }
           });
         }

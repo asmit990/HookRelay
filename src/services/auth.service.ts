@@ -40,8 +40,6 @@ export async function signUpUser(
   return token;
 }
 
-
-
 const loginUser = async (email: string, password: string) => {
   const user = await findUserByEmail(email);
 
