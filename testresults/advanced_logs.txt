@@ -1,0 +1,28 @@
+PASS tests/queue.test.ts
+PASS tests/database.test.ts
+  ● Console
+
+    console.log
+      Inserted 10000 logs in 630ms
+
+      at Object.<anonymous> (tests/database.test.ts:61:17)
+
+    console.log
+      Queried 100 logs from a pool of 10,000 in 4ms
+
+      at Object.<anonymous> (tests/database.test.ts:80:17)
+
+PASS tests/ratelimit.test.ts
+  ● Console
+
+    console.log
+      Generating 100 API keys...
+
+      at Object.<anonymous> (tests/ratelimit.test.ts:15:17)
+
+
+Test Suites: 3 passed, 3 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        3.431 s, estimated 4 s
+Ran all test suites matching tests/database.test.ts|tests/ratelimit.test.ts|tests/queue.test.ts.

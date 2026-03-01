@@ -1,0 +1,18 @@
+PASS tests/api.test.ts (12.945 s)
+  Auth and Webhook API Endpoints
+    Authentication
+      ✓ should register a new user (3528 ms)
+      ✓ should not register the same user twice (248 ms)
+      ✓ should login the existing user (1005 ms)
+      ✓ should fetch the current user profile (me) (1190 ms)
+    Webhooks
+      ✓ should return empty webhooks list initially (801 ms)
+      ✓ should create a new webhook (916 ms)
+      ✓ should toggle webhook active status (1434 ms)
+      ✓ should delete the webhook (1842 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        12.981 s
+Ran all test suites.

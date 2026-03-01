@@ -1,0 +1,764 @@
+  console.log
+    Starting stress test for 50000 users...
+
+      at Object.<anonymous> (tests/stress.test.ts:29:17)
+
+  console.log
+    Batch 1 complete. Registered: 100. Failed: 0. Elapsed: 9.28s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 2 complete. Registered: 200. Failed: 0. Elapsed: 12.88s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 3 complete. Registered: 300. Failed: 0. Elapsed: 15.87s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 4 complete. Registered: 400. Failed: 0. Elapsed: 19.14s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 5 complete. Registered: 500. Failed: 0. Elapsed: 22.48s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 6 complete. Registered: 600. Failed: 0. Elapsed: 25.55s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 7 complete. Registered: 700. Failed: 0. Elapsed: 29.76s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 8 complete. Registered: 800. Failed: 0. Elapsed: 33.21s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 9 complete. Registered: 900. Failed: 0. Elapsed: 37.33s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 10 complete. Registered: 1000. Failed: 0. Elapsed: 41.03s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 11 complete. Registered: 1100. Failed: 0. Elapsed: 44.15s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 12 complete. Registered: 1200. Failed: 0. Elapsed: 47.20s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 13 complete. Registered: 1300. Failed: 0. Elapsed: 50.63s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 14 complete. Registered: 1400. Failed: 0. Elapsed: 53.88s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 15 complete. Registered: 1500. Failed: 0. Elapsed: 57.50s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 16 complete. Registered: 1600. Failed: 0. Elapsed: 60.80s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 17 complete. Registered: 1700. Failed: 0. Elapsed: 63.91s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 18 complete. Registered: 1800. Failed: 0. Elapsed: 67.70s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 19 complete. Registered: 1900. Failed: 0. Elapsed: 72.11s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 20 complete. Registered: 2000. Failed: 0. Elapsed: 75.24s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 21 complete. Registered: 2100. Failed: 0. Elapsed: 78.81s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 22 complete. Registered: 2200. Failed: 0. Elapsed: 82.39s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 23 complete. Registered: 2300. Failed: 0. Elapsed: 86.04s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 24 complete. Registered: 2400. Failed: 0. Elapsed: 89.21s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 25 complete. Registered: 2500. Failed: 0. Elapsed: 92.30s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 26 complete. Registered: 2600. Failed: 0. Elapsed: 95.41s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 27 complete. Registered: 2700. Failed: 0. Elapsed: 98.64s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 28 complete. Registered: 2800. Failed: 0. Elapsed: 101.73s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 29 complete. Registered: 2900. Failed: 0. Elapsed: 104.70s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 30 complete. Registered: 3000. Failed: 0. Elapsed: 108.91s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 31 complete. Registered: 3100. Failed: 0. Elapsed: 112.50s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 32 complete. Registered: 3200. Failed: 0. Elapsed: 115.82s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 33 complete. Registered: 3300. Failed: 0. Elapsed: 119.38s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 34 complete. Registered: 3400. Failed: 0. Elapsed: 122.43s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 35 complete. Registered: 3500. Failed: 0. Elapsed: 125.45s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 36 complete. Registered: 3600. Failed: 0. Elapsed: 129.51s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 37 complete. Registered: 3700. Failed: 0. Elapsed: 132.95s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 38 complete. Registered: 3800. Failed: 0. Elapsed: 136.00s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 39 complete. Registered: 3900. Failed: 0. Elapsed: 138.99s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 40 complete. Registered: 4000. Failed: 0. Elapsed: 142.68s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 41 complete. Registered: 4100. Failed: 0. Elapsed: 146.32s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 42 complete. Registered: 4200. Failed: 0. Elapsed: 149.41s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 43 complete. Registered: 4300. Failed: 0. Elapsed: 153.41s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 44 complete. Registered: 4400. Failed: 0. Elapsed: 157.24s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 45 complete. Registered: 4500. Failed: 0. Elapsed: 161.19s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 46 complete. Registered: 4600. Failed: 0. Elapsed: 165.54s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 47 complete. Registered: 4700. Failed: 0. Elapsed: 169.64s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 48 complete. Registered: 4800. Failed: 0. Elapsed: 173.29s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 49 complete. Registered: 4900. Failed: 0. Elapsed: 177.97s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 50 complete. Registered: 5000. Failed: 0. Elapsed: 181.85s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 51 complete. Registered: 5100. Failed: 0. Elapsed: 185.56s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 52 complete. Registered: 5200. Failed: 0. Elapsed: 189.18s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 53 complete. Registered: 5300. Failed: 0. Elapsed: 193.29s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 54 complete. Registered: 5400. Failed: 0. Elapsed: 196.75s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 55 complete. Registered: 5500. Failed: 0. Elapsed: 200.46s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 56 complete. Registered: 5600. Failed: 0. Elapsed: 203.75s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 57 complete. Registered: 5700. Failed: 0. Elapsed: 207.83s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 58 complete. Registered: 5800. Failed: 0. Elapsed: 210.81s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 59 complete. Registered: 5900. Failed: 0. Elapsed: 213.79s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 60 complete. Registered: 6000. Failed: 0. Elapsed: 216.79s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 61 complete. Registered: 6100. Failed: 0. Elapsed: 219.97s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 62 complete. Registered: 6200. Failed: 0. Elapsed: 223.20s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 63 complete. Registered: 6300. Failed: 0. Elapsed: 226.23s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 64 complete. Registered: 6400. Failed: 0. Elapsed: 229.65s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 65 complete. Registered: 6500. Failed: 0. Elapsed: 233.09s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 66 complete. Registered: 6600. Failed: 0. Elapsed: 236.18s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 67 complete. Registered: 6700. Failed: 0. Elapsed: 239.48s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 68 complete. Registered: 6800. Failed: 0. Elapsed: 242.89s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 69 complete. Registered: 6900. Failed: 0. Elapsed: 246.53s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 70 complete. Registered: 7000. Failed: 0. Elapsed: 249.56s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 71 complete. Registered: 7100. Failed: 0. Elapsed: 252.92s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 72 complete. Registered: 7200. Failed: 0. Elapsed: 256.04s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 73 complete. Registered: 7300. Failed: 0. Elapsed: 259.53s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 74 complete. Registered: 7400. Failed: 0. Elapsed: 262.60s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 75 complete. Registered: 7500. Failed: 0. Elapsed: 265.74s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 76 complete. Registered: 7600. Failed: 0. Elapsed: 269.03s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 77 complete. Registered: 7700. Failed: 0. Elapsed: 272.37s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 78 complete. Registered: 7800. Failed: 0. Elapsed: 275.59s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 79 complete. Registered: 7900. Failed: 0. Elapsed: 278.94s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 80 complete. Registered: 8000. Failed: 0. Elapsed: 282.43s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 81 complete. Registered: 8100. Failed: 0. Elapsed: 285.65s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 82 complete. Registered: 8200. Failed: 0. Elapsed: 288.82s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 83 complete. Registered: 8300. Failed: 0. Elapsed: 291.88s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 84 complete. Registered: 8400. Failed: 0. Elapsed: 295.27s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 85 complete. Registered: 8500. Failed: 0. Elapsed: 298.52s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 86 complete. Registered: 8600. Failed: 0. Elapsed: 301.70s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 87 complete. Registered: 8700. Failed: 0. Elapsed: 306.03s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 88 complete. Registered: 8800. Failed: 0. Elapsed: 311.22s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 89 complete. Registered: 8900. Failed: 0. Elapsed: 314.53s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 90 complete. Registered: 9000. Failed: 0. Elapsed: 317.49s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 91 complete. Registered: 9100. Failed: 0. Elapsed: 320.93s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 92 complete. Registered: 9200. Failed: 0. Elapsed: 324.29s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 93 complete. Registered: 9300. Failed: 0. Elapsed: 327.28s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 94 complete. Registered: 9400. Failed: 0. Elapsed: 330.47s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 95 complete. Registered: 9500. Failed: 0. Elapsed: 333.68s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 96 complete. Registered: 9600. Failed: 0. Elapsed: 336.81s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 97 complete. Registered: 9700. Failed: 0. Elapsed: 340.02s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 98 complete. Registered: 9800. Failed: 0. Elapsed: 343.01s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 99 complete. Registered: 9900. Failed: 0. Elapsed: 346.01s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 100 complete. Registered: 10000. Failed: 0. Elapsed: 349.70s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 101 complete. Registered: 10100. Failed: 0. Elapsed: 352.69s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 102 complete. Registered: 10200. Failed: 0. Elapsed: 355.96s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 103 complete. Registered: 10300. Failed: 0. Elapsed: 359.37s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 104 complete. Registered: 10400. Failed: 0. Elapsed: 362.31s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 105 complete. Registered: 10500. Failed: 0. Elapsed: 365.47s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 106 complete. Registered: 10600. Failed: 0. Elapsed: 368.73s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 107 complete. Registered: 10700. Failed: 0. Elapsed: 372.44s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 108 complete. Registered: 10800. Failed: 0. Elapsed: 375.54s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 109 complete. Registered: 10900. Failed: 0. Elapsed: 378.59s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 110 complete. Registered: 11000. Failed: 0. Elapsed: 381.67s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 111 complete. Registered: 11100. Failed: 0. Elapsed: 384.86s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 112 complete. Registered: 11200. Failed: 0. Elapsed: 388.38s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 113 complete. Registered: 11300. Failed: 0. Elapsed: 391.42s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 114 complete. Registered: 11400. Failed: 0. Elapsed: 394.37s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 115 complete. Registered: 11500. Failed: 0. Elapsed: 397.49s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 116 complete. Registered: 11600. Failed: 0. Elapsed: 400.77s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 117 complete. Registered: 11700. Failed: 0. Elapsed: 403.80s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 118 complete. Registered: 11800. Failed: 0. Elapsed: 406.75s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 119 complete. Registered: 11900. Failed: 0. Elapsed: 409.79s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 120 complete. Registered: 12000. Failed: 0. Elapsed: 412.95s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 121 complete. Registered: 12100. Failed: 0. Elapsed: 416.26s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 122 complete. Registered: 12200. Failed: 0. Elapsed: 419.27s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 123 complete. Registered: 12300. Failed: 0. Elapsed: 422.29s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 124 complete. Registered: 12400. Failed: 0. Elapsed: 425.22s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 125 complete. Registered: 12500. Failed: 0. Elapsed: 428.38s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 126 complete. Registered: 12600. Failed: 0. Elapsed: 431.67s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 127 complete. Registered: 12700. Failed: 0. Elapsed: 434.68s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 128 complete. Registered: 12800. Failed: 0. Elapsed: 437.63s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 129 complete. Registered: 12900. Failed: 0. Elapsed: 441.15s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 130 complete. Registered: 13000. Failed: 0. Elapsed: 444.34s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 131 complete. Registered: 13100. Failed: 0. Elapsed: 447.74s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 132 complete. Registered: 13200. Failed: 0. Elapsed: 450.92s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 133 complete. Registered: 13300. Failed: 0. Elapsed: 454.14s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 134 complete. Registered: 13400. Failed: 0. Elapsed: 457.27s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 135 complete. Registered: 13500. Failed: 0. Elapsed: 460.27s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 136 complete. Registered: 13600. Failed: 0. Elapsed: 463.58s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 137 complete. Registered: 13700. Failed: 0. Elapsed: 466.55s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 138 complete. Registered: 13800. Failed: 0. Elapsed: 469.51s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 139 complete. Registered: 13900. Failed: 0. Elapsed: 472.72s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 140 complete. Registered: 14000. Failed: 0. Elapsed: 475.74s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 141 complete. Registered: 14100. Failed: 0. Elapsed: 478.98s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 142 complete. Registered: 14200. Failed: 0. Elapsed: 481.94s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 143 complete. Registered: 14300. Failed: 0. Elapsed: 485.13s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 144 complete. Registered: 14400. Failed: 0. Elapsed: 488.22s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 145 complete. Registered: 14500. Failed: 0. Elapsed: 492.09s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 146 complete. Registered: 14600. Failed: 0. Elapsed: 495.28s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Batch 147 complete. Registered: 14700. Failed: 0. Elapsed: 498.38s
+
+      at Object.<anonymous> (tests/stress.test.ts:60:21)
+
+  console.log
+    Cleaning up stress test users...
+
+      at Object.<anonymous> (tests/stress.test.ts:15:17)
+
+  console.log
+    Cleanup complete.
+
+      at Object.<anonymous> (tests/stress.test.ts:22:17)
+
+FAIL tests/stress.test.ts (502.238 s)
+  50k User Stress Test
+    ✕ should successfully register 50000 users under load (498416 ms)
+
+  ● 50k User Stress Test › should successfully register 50000 users under load
+
+    socket hang up
+
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        502.281 s
+Ran all test suites matching tests/stress.test.ts.

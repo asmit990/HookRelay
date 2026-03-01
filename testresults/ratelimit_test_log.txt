@@ -1,0 +1,14 @@
+FAIL tests/ratelimit.test.ts
+  ● Test suite failed to run
+
+    [96mtests/ratelimit.test.ts[0m:[93m113[0m:[93m20[0m - [91merror[0m[90m TS7053: [0mElement implicitly has an 'any' type because expression of type '"X-HookRelay-Timestamp"' can't be used to index type '{ 'X-HookRelay-Signature': string; 'X-HookRelay-Event': string; }'.
+      Property 'X-HookRelay-Timestamp' does not exist on type '{ 'X-HookRelay-Signature': string; 'X-HookRelay-Event': string; }'.
+
+    [7m113[0m             expect(headersToSend['X-HookRelay-Timestamp']).toBeUndefined();
+    [7m   [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.832 s
+Ran all test suites matching tests/ratelimit.test.ts.

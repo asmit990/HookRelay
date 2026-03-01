@@ -1,16 +1,16 @@
-import { Worker } from 'bullmq';                  
+import { Worker } from 'bullmq';
 import axios from 'axios';
 import crypto from 'crypto';
-import {redis} from '../config/redis/redis';
-import { prisma } from '../config/db/client';     
+import { redis } from '../config/redis/redis';
+import { prisma } from '../config/db/client';
 
 const worker = new Worker(
-  'webhook:delivery',
+  'webhook-delivery',
 
   async (job: any) => {
     const { webhookId, eventId, targetUrl, payload, secretKey, eventType } = job.data;
 
-    const attemptNumber = job.attemptsMade + 1;   
+    const attemptNumber = job.attemptsMade + 1;
 
     const payloadString = JSON.stringify(payload);
 
@@ -43,7 +43,7 @@ const worker = new Worker(
 
       console.log(`✅ Delivered to ${targetUrl} — Status: ${response.status}`);
 
-    } catch (error: any) {                         
+    } catch (error: any) {
       const responseCode = error.response?.status ?? null;
       const isLastAttempt = attemptNumber >= 5;
 
@@ -61,11 +61,11 @@ const worker = new Worker(
 
       console.log(` Attempt ${attemptNumber} failed for ${targetUrl}: ${error.message}`);
 
-      throw error; 
+      throw error;
     }
   },
 
-  { connection: redis }                            
+  { connection: redis }
 );
 
 worker.on('completed', (job) => console.log(` Job ${job.id} done`));
