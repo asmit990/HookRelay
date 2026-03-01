@@ -9,10 +9,10 @@ async function startServer() {
     try {
 
         await prisma.$connect();
-        console.log('✅ PostgreSQL connected');
+        console.log(' PostgreSQL connected');
 
         await redisClient.ping();
-        console.log('✅ Redis connected');
+        console.log('Redis connected');
 
         app.listen(PORT, () => {
             console.log('');
