@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client-js"
-  output = "../generated/prisma"
+
 }
 
 datasource db {
@@ -25,6 +25,9 @@ model User {
 
   webhooks     Webhook[]
   events       Event[]
+
+  provider      String?     
+  providerId    String?     
 }
 
 model Webhook {
