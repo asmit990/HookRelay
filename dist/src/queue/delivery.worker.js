@@ -3,14 +3,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const bullmq_1 = require("bullmq"); // fix 1: named import
+const bullmq_1 = require("bullmq");
 const axios_1 = __importDefault(require("axios"));
 const crypto_1 = __importDefault(require("crypto"));
 const redis_1 = require("../config/redis/redis");
-const client_1 = require("../config/db/client"); // fix: use relative path, not 'src/'
-const worker = new bullmq_1.Worker('webhook:delivery', async (job) => {
+const client_1 = require("../config/db/client");
+const worker = new bullmq_1.Worker('webhook-delivery', async (job) => {
     const { webhookId, eventId, targetUrl, payload, secretKey, eventType } = job.data;
-    const attemptNumber = job.attemptsMade + 1; // fix 2: attemptsMade not attemptMade
+    const attemptNumber = job.attemptsMade + 1;
     const payloadString = JSON.stringify(payload);
     const signature = crypto_1.default
         .createHmac('sha256', secretKey)
@@ -26,7 +26,6 @@ const worker = new bullmq_1.Worker('webhook:delivery', async (job) => {
                 'X-HookRelay-Delivery-Id': job.id
             }
         });
-        // fix 3: log SUCCESS to delivery_logs, not create a webhook
         await client_1.prisma.deliveryLog.create({
             data: {
                 webhookId,
@@ -39,10 +38,9 @@ const worker = new bullmq_1.Worker('webhook:delivery', async (job) => {
         });
         console.log(`✅ Delivered to ${targetUrl} — Status: ${response.status}`);
     }
-    catch (error) { // fix 4: catch block added
+    catch (error) {
         const responseCode = error.response?.status ?? null;
         const isLastAttempt = attemptNumber >= 5;
-        // log FAILURE to delivery_logs
         await client_1.prisma.deliveryLog.create({
             data: {
                 webhookId,
@@ -55,10 +53,9 @@ const worker = new bullmq_1.Worker('webhook:delivery', async (job) => {
             }
         });
         console.log(` Attempt ${attemptNumber} failed for ${targetUrl}: ${error.message}`);
-        throw error; // CRITICAL: throw so BullMQ knows to retry
+        throw error;
     }
-}, { connection: redis_1.redis } // fix 5: pass redis connection
-);
+}, { connection: redis_1.redis });
 worker.on('completed', (job) => console.log(` Job ${job.id} done`));
 worker.on('failed', (job, err) => console.log(` Job ${job?.id} failed: ${err.message}`));
 exports.default = worker;

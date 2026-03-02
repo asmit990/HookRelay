@@ -18,7 +18,7 @@ async function rateLimitMiddleware(req, res, next) {
         }
         res.setHeader('X-RateLimit-Limit', MAX_REQUESTS);
         res.setHeader('X-RateLimit-Remaining', Math.max(0, MAX_REQUESTS - currentCount));
-        res.setHeader('X-RateLimit-Reset', WINDOW_SECONDS); // seconds until reset
+        res.setHeader('X-RateLimit-Reset', WINDOW_SECONDS);
         if (currentCount > MAX_REQUESTS) {
             return res.status(429).json({
                 success: false,
@@ -30,8 +30,6 @@ async function rateLimitMiddleware(req, res, next) {
         next();
     }
     catch (error) {
-        // If Redis is down, don't block all traffic
-        // Log the error but let the request through (fail open)
         console.error('[rateLimitMiddleware] Redis error:', error);
         next();
     }

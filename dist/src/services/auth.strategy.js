@@ -26,7 +26,7 @@ passport_1.default.use(new passport_google_oauth20_1.Strategy({
                     email,
                     apiKey: crypto_1.default.randomBytes(32).toString("hex"),
                     secretKey: crypto_1.default.randomBytes(32).toString("hex"),
-                    passwordHash: "", // required field in your schema
+                    passwordHash: "",
                 }
             });
         }

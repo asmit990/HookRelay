@@ -4,7 +4,7 @@ exports.deliveryQueue = void 0;
 exports.addDeliveryJob = addDeliveryJob;
 const bullmq_1 = require("bullmq");
 const redis_1 = require("../config/redis/redis");
-exports.deliveryQueue = new bullmq_1.Queue('webhook:delivery', {
+exports.deliveryQueue = new bullmq_1.Queue('webhook-delivery', {
     connection: redis_1.redis
 });
 async function addDeliveryJob(data) {

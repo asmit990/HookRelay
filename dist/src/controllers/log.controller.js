@@ -7,7 +7,6 @@ async function getAllLogs(req, res) {
     try {
         const userId = req.userId;
         const status = req.query.status;
-        // Pagination
         const page = parseInt(req.query.page) || 1;
         const limit = parseInt(req.query.limit) || 20;
         const skip = (page - 1) * limit;
@@ -29,7 +28,6 @@ async function getAllLogs(req, res) {
                     responseCode: true,
                     errorMessage: true,
                     deliveredAt: true,
-                    // Include related info so the UI can display it nicely
                     webhook: {
                         select: { id: true, targetUrl: true }
                     },
@@ -59,16 +57,10 @@ async function getAllLogs(req, res) {
         });
     }
 }
-// ─────────────────────────────────────────────
-// GET /api/logs/:webhook_id
-// All delivery logs for ONE specific webhook
-// Useful for debugging a specific failing webhook
-// ─────────────────────────────────────────────
 async function getLogsForWebhook(req, res) {
     try {
         const webhook_id = req.params.webhook_id;
         const userId = req.userId;
-        // First verify: does this webhook belong to this user?
         const webhook = await client_1.prisma.webhook.findFirst({
             where: { id: webhook_id, userId }
         });
@@ -79,7 +71,6 @@ async function getLogsForWebhook(req, res) {
                 message: 'Webhook not found or does not belong to you'
             });
         }
-        // Pagination
         const page = parseInt(req.query.page) || 1;
         const limit = parseInt(req.query.limit) || 20;
         const skip = (page - 1) * limit;

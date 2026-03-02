@@ -82,7 +82,6 @@ function buildErrorMessage(error) {
         return `Connection refused — target server is not accepting connections`;
     }
     if (error.response) {
-        // Server responded with a non-2xx status
         return `Received HTTP ${error.response.status} from target URL`;
     }
     return error.message ?? 'Unknown delivery error';

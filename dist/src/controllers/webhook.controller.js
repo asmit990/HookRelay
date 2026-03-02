@@ -6,11 +6,10 @@ exports.updateWebhook = updateWebhook;
 exports.deleteWebhook = deleteWebhook;
 exports.toggleWebhook = toggleWebhook;
 const client_1 = require("../config/db/client");
-// ─────────────────────────────────────────────
 async function createWebhook(req, res) {
     try {
         const { targetUrl, eventTypes } = req.body;
-        const userId = req.userId; // set by auth middleware
+        const userId = req.userId;
         if (!targetUrl || !eventTypes || !Array.isArray(eventTypes) || eventTypes.length === 0) {
             return res.status(400).json({
                 success: false,
@@ -51,10 +50,6 @@ async function createWebhook(req, res) {
         });
     }
 }
-// ─────────────────────────────────────────────
-// GET /api/webhooks
-// List all webhooks belonging to this user
-// ─────────────────────────────────────────────
 async function listWebhooks(req, res) {
     try {
         const userId = req.userId;
@@ -81,10 +76,6 @@ async function listWebhooks(req, res) {
         });
     }
 }
-// ─────────────────────────────────────────────
-// PATCH /api/webhooks/:id
-// Update a webhook's URL or event types
-// ─────────────────────────────────────────────
 async function updateWebhook(req, res) {
     try {
         const id = req.params.id;
@@ -122,10 +113,6 @@ async function updateWebhook(req, res) {
         });
     }
 }
-// ─────────────────────────────────────────────
-// DELETE /api/webhooks/:id
-// Permanently delete a webhook
-// ─────────────────────────────────────────────
 async function deleteWebhook(req, res) {
     try {
         const id = req.params.id;
@@ -155,11 +142,6 @@ async function deleteWebhook(req, res) {
         });
     }
 }
-// ─────────────────────────────────────────────
-// PATCH /api/webhooks/:id/toggle
-// Enable or disable a webhook without deleting it
-// Active → Inactive, or Inactive → Active
-// ─────────────────────────────────────────────
 async function toggleWebhook(req, res) {
     try {
         const id = req.params.id;

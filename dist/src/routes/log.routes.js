@@ -1,1 +1,10 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const log_controller_1 = require("../controllers/log.controller");
+const auth_middlerware_1 = require("../middleware/auth.middlerware");
+const router = (0, express_1.Router)();
+router.use(auth_middlerware_1.authMiddleware);
+router.get('/', log_controller_1.getAllLogs);
+router.get('/:webhook_id', log_controller_1.getLogsForWebhook);
+exports.default = router;
