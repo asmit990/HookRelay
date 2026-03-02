@@ -5,8 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)](https://nodejs.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue?logo=postgresql)](https://postgresql.org)
 [![Redis](https://img.shields.io/badge/Redis-7+-red?logo=redis)](https://redis.io)
-[![Claude AI](https://img.shields.io/badge/Claude-AI%20Powered-blueviolet?logo=anthropic)](https://anthropic.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
 
 ---
 
