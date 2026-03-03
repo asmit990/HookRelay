@@ -14,7 +14,7 @@ async function startWorker() {
         console.log('Redis connected');
 
         const worker = new Worker(
-            'webhook:delivery',
+            'webhook-delivery',
 
             async (job) => {
                 console.log(`  Processing job ${job.id} | attempt ${job.attemptsMade + 1}`);
@@ -28,7 +28,7 @@ async function startWorker() {
 
             {
                 connection: redisClient,
-                concurrency: 10,  
+                concurrency: 10,
 
             }
         );
@@ -49,7 +49,7 @@ async function startWorker() {
 
         console.log('');
         console.log(' HookRelay Worker is running');
-        console.log(' Listening on queue: webhook:delivery');
+        console.log(' Listening on queue: webhook-delivery');
         console.log(' Concurrency: 10 jobs at a time');
         console.log('');
 
@@ -57,7 +57,7 @@ async function startWorker() {
         // When worker process is killed, finish current jobs before stopping
         process.on('SIGINT', async () => {
             console.log('\n Shutting down worker...');
-            await worker.close();         
+            await worker.close();
             await prisma.$disconnect();
             await redisClient.quit();
             console.log(' Worker shut down cleanly.');
